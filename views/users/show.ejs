@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/pratica.css" />
     <title>Exibir Usuário</title>
-</head>
-<body>
-    <h1>Exibir Usuário</h1>
-    
-    <div>        
-        <p><b>ID:</b> <%= user.id %></p>
-        <p><b>Nome:</b> <%= user.name %></p>
-        <p><b>Apelido:</b> <%= user.username %></p>
-        <p><b>Data de Nascimento:</b> <%= user.birthDate %></p>
-        <p><b>Email:</b> <%= user.email %></p>
-        <p><b>Sexo:</b> <%= user.sex %></p>
-        <p><b>Administrador:</b> <%= user.administrator ? "Sim" : "Não" %></p>
-        <p><b>Estado:</b> <%= user.status %></p>
-        <p><b>Data Cadastro:</b> <%= user.createdAt %></p>
-        <p><b>Data da Última Atualização:</b> <%= user.updatedAt || "Nenhuma atualização realizada." %></p>      
-    </div>
+  </head>
 
-    <ul>
-        <li><a href="/usuarios">Lista de Usuários</a></li>
-        <li><a href="/usuarios/cadastrar">Cadastrar Usuário</a></li>
-        <li><a href="/usuarios/atualizar/<%= user.id %>">Atualizar Usuário</a></li>
-        <li><a href="/usuarios/deletar/<%= user.id %>">Deletar Usuário</a></li>
-    </ul>
-</body>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="/images/Tweet-Web.png" width=" 300 px" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <p>
+          <a href="/autenticacao/login">
+            <h1>Entrar</h1>
+          </a>
+        </p>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <h3><p>&copy;2024 Tweet|Web</p></h3>
+      </div>
+    </footer>
+  </body>
 </html>

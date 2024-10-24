@@ -1,0 +1,717 @@
+header {
+     margin-bottom: 30px;
+ }
+
+.header-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 310px;
+    height: 50px;
+    background-color: #fff;
+    margin-left: 0px;
+    margin-top: 0px;
+    border-radius: 5px;
+}
+
+.container {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-comando {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 10px;
+    align-items: center;
+    width: fit-content;
+    padding: 20px;
+    gap: 10px;
+    margin-left: auto;
+    background-color: #fff;
+}
+
+.chat {
+    border: 1px solid #2e2d2d;
+    border-radius: 5px;
+    min-width: 300px;
+    height: 350px;
+    color: #0e0d0d;
+    overflow-y: scroll;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+.btn-offline {
+    border: 1px solid #2e2d2d;
+    width: 60px;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.btn-offline:hover {
+    border: 1px solid #2e2d2d;
+    background-color: #fff;
+}
+
+
+a {
+    color: #0a0a0a;
+}
+
+
+body {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.chat {
+    border: 1px solid #2e2d2d;
+    border-radius: 5px;
+    color: #0e0d0d;
+    overflow-y: scroll;
+}
+
+.x {
+    width: 360px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+
+.cadastro{
+    top: 5%;
+    padding: 2%;
+    padding: 2%;
+    border: 1px solid #0c0c0c;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 4%;
+    width: 20%;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+@media (max-width: 425px) {
+    .cadastro {
+        top: 5%;
+        padding: 2%;
+        padding: 2%;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 4%;
+        width: 90%;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+}
+.cn label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.cu label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.cf label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.cf-texto {
+    border-radius: 4px;
+    border: 0.5px solid #0c0c0c;
+    width: 200px;
+}
+
+.cdn label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.cs label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.ce label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.cmf label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.editar{
+    top: 5%;
+    padding: 2%;
+    padding: 2%;
+    border: 1px solid #0c0c0c;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 4%;
+    width: 20%;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+@media (max-width: 425px) {
+    .editar {
+        top: 5%;
+        padding: 2%;
+        padding: 2%;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 4%;
+        width: 90%;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+}
+
+.card {
+    border: 1px solid #0c0c0c;
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 320px) {
+    .card {
+        border: 1px solid #0c0c0c;
+        width: 260px;
+        background-color: #7cee30;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.card-login-cadastrar {
+    border: 1px solid #0c0c0c;
+    background-color: #fff;
+    color: #0c0c0c;
+    padding: 12px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.card-login-cadastrar:hover {
+    border: 1px solid #0c0c0c;
+    background-color: #7cee30;
+    color: #0c0c0c;
+    padding: 12px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit {
+    border: 1px solid #0c0c0c;
+    background-color: #fff;
+    color: #0c0c0c;
+    width: 90px;
+    height: 45px;
+    margin-right: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    border: 1px solid #0c0c0c;
+    background-color: #7cee30;
+    color: #0c0c0c;
+    width: 90px;
+    height: 45px;
+    margin-right: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+}  
+
+#login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px;
+}
+
+
+.auth-senha {
+    width: 45%;
+    border: 0.3px solid #0c0c0c;
+    border-radius: 4px;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.p {
+    width: 1cm; 
+    height: 1cm;
+}
+
+p {
+    margin: 0px;
+}
+
+.j {
+    border-radius: 5px;
+    margin-left: 75px;
+    height: auto;
+}
+
+.bj {
+    border: 1px solid #0c0c0c;
+    border-radius: 5px;
+    margin-left: 75px;
+    height: auto;
+}
+    
+.card-l {
+    border: 1px solid #0c0c0c;
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 320px) {
+    .card-l {
+        border: 1px solid #0c0c0c;
+        width: 300px;
+        height: 200px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .bt,
+    .l,
+    .z,
+    .m {
+        position: static;
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        min-width: 100%;
+        border: none;
+        border-radius: 0;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+
+
+
+
+
+
+.b,
+.g,
+.t {
+    top: 0;
+    height: 70%;
+    border-radius: 2px;
+    max-width: 70%;
+    min-width: 70%;
+    border-left: 0;
+    border-right: 0;
+    padding: 0;
+}
+
+
+
+.bt {
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.bt {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.089);
+    border-radius: 2px;
+    padding: 0;
+    border: none;
+    right: 2%;
+    top: 0;
+    max-width: 30%;
+    min-width: 30%;
+    height: 5%;
+    background-image: url('33.jpg');
+    background-size: cover;
+}
+
+button:hover {
+    background-color: #0530ee;
+}
+
+
+
+/* Estilo padrão para desktop */
+.c {
+    top: 0;
+    width: 240px;
+    height: 40%;
+    border-radius: 2px;
+    margin-bottom: 0;
+}
+
+/* Para tablets */
+@media (max-width: 768px) {
+    .c {
+        width:0px;
+        height: 0px;
+    }
+}
+
+/* Para smartphones */
+@media (max-width: 480px) {
+    .c {
+        width: 200px;
+        height: 40px;
+        border-radius: 0;
+    }
+}
+
+
+
+
+/* Estilo para o cabeçalho do cartão */
+.card-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para o rodapé do cartão */
+.card-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+.card-footer a {
+    text-decoration: none;
+    color: #0c0c0c;
+    margin-left: 0px;
+}
+
+
+.custom-file-input {
+    position: absolute;
+    top: 250%;
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    border-left: 0;
+    border-right: 0;
+    padding: 0;
+}
+
+.d {
+    width: 80%;
+    padding: 5px;
+}
+
+
+
+.h {
+    width: 340px;
+    height: 320px;
+}
+
+
+
+.i {
+    font-size: 12px; 
+    color: rgb(246, 30, 1);
+    margin-left: 18px;
+}
+
+
+.l {
+    position: absolute;
+    top: 0%;
+    left: 2%;
+    height: 34px;
+    border: 2px solid transparent;
+    color: #fff;
+    width: 10%;
+}
+
+li {
+    padding: 0px;
+    margin: 0px;
+    width: 60px;
+    height: 60px;
+    margin-top: 1px;
+}
+
+
+.m {
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    height: 34px;
+    border: 2px solid transparent;
+    color: #fff;
+    width: 10%;
+}
+.n {
+    position: absolute;
+    top: 1%;
+    left: 85%;
+    right: 30%;
+    height: 24px;
+    color: #0c0b0b;
+    width: 10%; 
+}
+
+
+.r {
+    top: 2px;
+    height: 45px;
+    border-radius: 8PX;
+}
+/* Para tablets */
+@media (max-width: 768px) {
+    .r {
+        width: 30%;
+        height: 55%;
+        border-radius: 8PX;
+    }
+}
+
+/* Para smartphones */
+@media (max-width: 480px) {
+    .r {
+        width: 30%;
+        height: 55%;
+        border-radius: 8PX;;
+    }
+}
+
+.s {
+
+    width: 237px;
+    height: 174px;
+    margin-left: 0px;
+}
+
+
+
+.v {
+    width: 370px;
+    height: 100px;
+}
+
+/* Para tablets */
+@media (max-width: 768px) {
+    .v {
+        width: 100%;
+        height: 35%;
+    }
+}
+
+/* Para smartphones */
+@media (max-width: 480px) {
+    .v {
+        width: 100%;
+        height: 30%;
+        border-radius: 0;
+    }
+}
+
+.photo-container {
+    margin-top: 10px;
+}
+
+.uploaded-photo {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+
+
+/* Estilo para os campos de entrada */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #0c0c0c;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
+.mod{
+    width: 10%;
+    background-color: #1f2df5;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+
+.mod1{
+    width: 5.5%;
+    height: 6%;
+    background-color: #f30404;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+
+   .mod,
+   .mod1 {
+        width: 23%;
+        height: 7%;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 0;
+       
+    }
+}
+ 
+.upload-foto {
+    width: 60px;
+    height: 80px;
+   
+  }
+
+  #close-modal {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+    /* Ajusta a altura automaticamente */
+    max-width: 100%;
+    /* Garante que o player não ultrapasse a largura do modal */
+  }
+
+  /* Estilos para o contêiner de entrada */
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Estilos para a caixa de texto */
+input.c {
+    width: 100%;
+    padding-right: 40px; /* Espaço para o ícone */
+    box-sizing: border-box;
+    border-radius: 5px; 
+}
+
+/* Estilos para o ícone */
+.icon {
+    position: absolute;
+    right: 10px; /* Espaçamento do lado direito */
+    cursor: pointer;
+    color: #666;
+    transition: opacity 0.3s;
+    font-size: 1.5em; /* Ajuste o tamanho do ícone */
+}
+
+.icon.hidden {
+    opacity: 0;
+}
+
+/* Estilos para o modal e conteúdo */
+.modal {
+    display: none; /* Oculto por padrão */
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    top: 3%;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 382px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+}
+   
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .modal-content {
+        top: 3%;
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 90%;
+        position: relative;
+    }
+ }

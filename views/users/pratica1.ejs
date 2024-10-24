@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sua Página</title>
+  <link rel="stylesheet" href="/stylesheets/pratica.css">
+</head>
+
+<body>
+  <header></header>
+  <main>
+    <div class="container">
+      <div class="chat">
+            <% let currentUsername = null; %>
+            <% for (const mensagem of mensagens) { %>
+              <% if (mensagem.username !== currentUsername) { %>
+                    <div class="p">
+                      <% if (mensagem.photo) { %>
+                        <img id="photo_<%= mensagem.id %>" src="<%= mensagem.photo %>" style="width: 1cm; height: 1cm; border-radius: 50px;">
+                      <% } else { %>
+                        <div style="width: 1cm; height: 1cm; border-radius: 50px; font-size: 25px; display: flex; align-items: center; justify-content: center;">
+                          👼
+                        </div>
+                      <% } %>
+                      <%= mensagem.username %>
+                    </div>
+                    <% currentUsername = mensagem.username; %>
+                    <% } %>  
+                    <br>
+                    <div class="j">
+                      <h5>
+                          <% if (mensagem.filename) { %>
+                          <% if (mensagem.filename.includes(".jpg") || mensagem.filename.includes(".jpeg") ||
+                            mensagem.filename.includes(".png") || mensagem.filename.includes(".gif")) { %>
+                            <img src="<%= mensagem.filename %>" alt="" class="upload-foto">
+                          <% } else if (mensagem.filename.includes(".mp3")) { %>
+                            <button class="mod" onclick="abrirModal('<%= mensagem.filename %>')">
+                              <h6>Ouvir Áudio</h6>
+                            </button>
+                          <% } else if (mensagem.filename.includes(".mp4") || mensagem.filename.includes(".webm")) { %>
+                            <button class="mod" onclick="abrirVideoEmNovaAba('<%= mensagem.filename %>')">
+                              <h6>Assistir Vídeo</h6>
+                            </button>
+                          <% } else if (mensagem.filename.includes(".pdf")) { %>
+                            <div>PDF</div>
+                          <% } else if (mensagem.filename.includes(".doc") || mensagem.filename.includes(".docx")) { %>
+                            <div>Word</div>
+                          <% } %>
+                          <div>
+                            <a href="<%= mensagem.filename %>" download>
+                              <h6>Baixar</h6>
+                            </a>
+                          </div>
+                          <% } %>
+                        
+                          <div>
+                            <p><%= mensagem.content %></p>
+                            <span class="i"><%= mensagem.createdAt %></span>
+                          </div>
+                      </h5>
+                    </div>
+              <br>
+            <% } %>
+            <% let fotosExibidas = []; %>
+            <% for (const mensagem of mensagens) { %>
+              <% if (mensagem.photo && !fotosExibidas.includes(mensagem.photo)) { %>
+                <div class="photo-container">
+                  <!-- Content for the photo container if needed -->
+                </div>
+                <% fotosExibidas.push(mensagem.photo); %>
+              <% } %>
+            <% } %>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <h3> <p>&copy;2024 Tweet|Web</p></h3>
+    </div>
+  </footer>
+  <script src="/javascripts/pratica.js"></script>
+</body>
+</html>

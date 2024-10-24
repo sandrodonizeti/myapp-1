@@ -1,0 +1,58 @@
+ <div class="z">
+        <div>
+          <h1>Protótipo.</h1>
+          <h2>Esta página está sendo desenvolvida por um aluno do IFSP Campos Caraguatatuba.</h2>
+        </div>
+
+        <div style="display: flex; flex-direction: row; gap: 2rem">
+          <form class="x" action="/pratica" method="post" autocomplete="off" onsubmit="return validateMessage()">
+            <div class="input-container">
+              <input class="c" type="text" id="mensagem" name="mensagem" autocomplete="off"
+                placeholder="Digite uma mensagem..." oninput="toggleIconVisibility()">
+
+              <span class="icon" id="icon-upload" onclick="openModal()">
+                <H3>📎</H3>
+              </span>
+              
+            </div>
+            <input class="d" type="hidden" name="user_id" id="user_id" value="<%= user_id %>"><br>
+            <button class="r" id="submit-button" type="submit">
+              <h2>Enviar</h2>
+            </button>
+          </form>
+
+
+          <a href="/usuarios/deletar/<%= user.id %>"><h5>Deletar perfil</h5></a>
+
+
+          
+const mysql = require('mysql2/promise');
+
+
+const pool = mysql.createPool({
+    host: "junction.proxy.rlwy.net",
+    port: 41202,
+    user: "root",
+    password: "TNPrCFBaZYjjQDcVptmYCixHaLuzHvkM",
+    database: "railway",
+});
+
+module.exports = pool;
+
+
+const mysql = require('mysql2/promise');
+require('dotenv').config();
+
+const dbConfig = {
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_DATABASE,
+};
+
+console.log('DB Config:', dbConfig); // Adicione esta linha para verificar os valores
+
+const pool = mysql.createPool(dbConfig);
+
+
+module.exports = pool;

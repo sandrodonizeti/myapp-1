@@ -1,64 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/pratica.css">
     <title>Atualizar Usuário</title>
 </head>
-
 <body>
-    <h1>Atualizar Usuário</h1>
-
-    <form method="post" action="/usuarios/atualizar/<%= user?.id %>">
-        <div>
-            <label for="name">Nome</label>
-            <input type="text" id="name" name="name" value="<%= user?.name %>">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="/images/Tweet-Web.png" width=" 300 px" />
+            </div>
+            <div class="header-entrar">
+                <h1><a href="/pratica">Chat</a></h1>
+            </div>
         </div>
-
-        <div>
-            <label for="username">Apelido</label>
-            <input type="text" id="username" name="username" value="<%= user?.username %>">
+    </header>
+    <main>
+        <div class="header-editar">
+          <div class="cadastro">
+              <h1>Atualizar Usuário</h1>
+              <form method="post" action="/usuarios/atualizar/<%= user?.id %>">
+                  <div>
+                      <label for="name">Nome</label>
+                      <input type="text" id="name" name="name" value="<%= user?.name %>" required>
+                  </div>
+                      <br>
+                  <div>
+                      <label for="username">Usuario</label>
+                      <input type="text" id="username" name="username" value="<%= user?.username %>" required>
+                  </div>
+                      <br>
+                  <div>
+                      <label for="photo">Foto</label>
+                      <input type="photo" id="photo" name="photo" value="<%= user?.photo %>">
+                  </div>
+                      <br>
+                  <div>
+                      <label for="birthDate">Data de Nascimento</label>
+                      <input type="date" id="birthDate" name="birthDate" value="<%= user?.birthDate %>"required>
+                  </div>
+                      <br>
+                      <div class="cs">
+                          <h2><label for="password">Senha</label></h2>
+                          <input type="password" id="password" name="password" oninput="validatePassword()" required/>
+                          <ul id="password-message" class="auth-senha">                     
+                              <H4 id="uppercase" style="color: blue; margin: 0px;">Letra maiúscula</H4>
+                              <H4 id="lowercase" style="color: blue; margin: 0px">Letra minúscula</H4>      
+                              <H4 id="number" style="color: blue; margin: 0px">Número</H4>        
+                              <H4 id="special" style="color: blue; margin: 0px">( @, %, % )</H4>    
+                              <H4 id="length" style="color: blue; margin: 0px">Minimo 6</H4> 
+                            </ul>
+                        </div>
+                      <br>
+                  <div>
+                      <label for="email">Email</label>
+                      <input type="email" id="email" name="email" value="<%= user?.email %>">
+                  </div>
+                  <br>
+                  <div>
+                      <label for="sex">Sexo</label>
+                      <select id="sex" name="sex" required>
+                          <option value="Masculino">Masculino</option>
+                          <option value="Feminino">Feminino</option>
+                          <option value="Outro">Outro</option>
+                          <option value="Prefiro não responder">Prefiro não responder</option>
+                      </select>
+                  </div>
+                  <br>
+                  <div>
+                      <input type="submit" value="Atualizar" class="submit">
+                  </div>
+              </form> 
+          </div>
+          <script src="/js/script.js"></script>
+    </main>
+    <footer>
+        <div class="container">
+          <h3> <p>&copy;2024 Tweet|Web</p></h3>
         </div>
-
-        <div>
-            <label for="birthDate">Data de Nascimento</label>
-            <input type="date" id="birthDate" name="birthDate" value="<%= user?.birthDate %>">
-        </div>
-
-        <div>
-            <label for="password">Senha</label>
-            <input type="password" id="password" name="password">
-        </div>
-
-        <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" value="<%= user?.email %>">
-        </div>
-
-        <div>
-            <label for="sex">Sexo</label>
-            <select id="sex" name="sex">
-                <option value="Masculino">Masculino</option>
-                <option value="Feminino">Feminino</option>
-                <option value="Outro">Outro</option>
-                <option value="Prefiro não responder">Prefiro não responder</option>
-            </select>
-        </div>
-
-        <div>
-            <input type="submit" value="Atualizar">
-        </div>
-    </form>
-
-    <ul>
-        <li><a href="/usuarios">Lista de Usuários</a></li>
-        <li><a href="/usuarios/cadastrar">Cadastrar Usuário</a></li>
-        <li><a href="/usuarios/exibir/<%= user.id %>">Exibir Usuário</a></li>
-        <li><a href="/usuarios/deletar/<%= user.id %>">Deletar Usuário</a></li>
-    </ul>
-
+    </footer>
 </body>
 
 </html>
