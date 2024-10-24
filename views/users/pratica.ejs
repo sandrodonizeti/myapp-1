@@ -102,7 +102,9 @@
               <div class="input-container">
                 <input class="c" type="text" id="mensagem" name="mensagem" autocomplete="off"
                   placeholder="Digite uma mensagem..." oninput="toggleIconVisibility()">
-                
+                <span class="icon" id="icon-upload" onclick="openModal()">
+                  <H3>📎</H3>
+                </span>
               </div>
               <input class="d" type="hidden" name="user_id" id="user_id" value="<%= user_id %>"><br>
               <button class="r" id="submit-button" type="submit">
